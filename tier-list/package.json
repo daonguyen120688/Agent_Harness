@@ -1,0 +1,45 @@
+{
+  "name": "language-tier-list",
+  "version": "1.0.0",
+  "description": "Rank the 2026 programming languages — drag-and-drop tier list built with React, Bootstrap 5 and Tailwind CSS.",
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.html\" \"*.css\" \"*.js\" --port 3000 --no-notify --no-ui",
+    "run": "npm start",
+    "build": "node build.js",
+    "preview": "npm run build && serve dist -l 4173",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testMatch": ["<rootDir>/tests/**/*.test.js"],
+    "testEnvironmentOptions": { "customExportConditions": ["node", "require", "default"] },
+    "collectCoverageFrom": [
+      "app.js",
+      "data.js",
+      "build.js",
+      ".claude/skills/add-language/validate.js"
+    ],
+    "coverageReporters": ["text", "html"],
+    "coverageThreshold": {
+      "global": { "statements": 100, "branches": 100, "functions": 100, "lines": 100 }
+    }
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "htm": "3.1.1",
+    "html2canvas": "1.4.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.17"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "serve": "^14.2.4"
+  },
+  "engines": {
+    "node": ">=16.7"
+  }
+}

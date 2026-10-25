@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Generic database cylinder: SQL has no official logo. -->
+  <path fill="#1d6fb8" d="M24 30v68c0 9.9 17.9 18 40 18s40-8.1 40-18V30z"/>
+  <path fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="4" d="M24 54c0 9.9 17.9 18 40 18s40-8.1 40-18M24 78c0 9.9 17.9 18 40 18s40-8.1 40-18"/>
+  <ellipse cx="64" cy="30" rx="40" ry="16" fill="#5aa6e6"/>
+</svg>
