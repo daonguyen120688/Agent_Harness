@@ -1,6 +1,5 @@
-node_modules/
-coverage/
+
+# Project
 .playwright-mcp/
 udemy-claude-code-*.png
 .claude/settings.local.json
-.env
